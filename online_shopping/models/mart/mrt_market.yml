@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: mrt_market
+    description: customer table excluding NUNAVUT region and product categories
+    columns:
+      - name: ord_id
+        description: Unique identifier for the order
+        tests:
+          - unique
+          - not_null
+      - name: prod_id
+        description: Unique identifier for the product
+        tests:
+          - unique
+          - not_null
+      - name: ship_id
+        description: Unique identifier for the ship
+        tests:
+          - unique
+          - not_null
+      - name: cust_id
+        description: Unique identifier for the ship
+        tests:
+          - unique
+          - not_null
+      - name: sales
+        description: sales made by the customer
+      - name: Discount
+        description: Discount offered to the customer
+      - name: Order_Quantity
+        description: Order Quantity date of the customer
+      - name: Product_Base_Margin
+        description: Product Base Margin made by the company
+      - name: region
+        description: Region of the customer
+      - name: product_category
+        description: product category of the product
+      - name: product_sub_category 
+        description: product_sub_category of the product
+      

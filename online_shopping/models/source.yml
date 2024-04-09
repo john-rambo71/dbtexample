@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: online
+    database: online_shopping
+    schema: dbo
+    tables:
+        - name: customer
+        - name: market
+        - name: order
+        - name: product
+        - name: shipping

@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: mrt_customer
+    description: customer table excluding NUNAVUT region
+    columns:
+      - name: id
+        description: Unique identifier for the customer
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: name of the customer
+      - name: Region
+        description: Region of the customer
+      - name: first_order_date
+        description: first order date of the customer
+      - name: recent_order_date
+        description: recent order date of the customer
+      - name: total_spent
+        description: total spent by the customer

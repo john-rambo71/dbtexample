@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: mrt_order
+    description: customer table excluding NUNAVUT region and profit loss calculation
+    columns:
+      - name: ord_id
+        description: Unique identifier for the order
+        tests:
+          - unique
+          - not_null
+      - name: Region
+        description: Region of the customer
+      - name: net_profit
+        description: net_profit to the company

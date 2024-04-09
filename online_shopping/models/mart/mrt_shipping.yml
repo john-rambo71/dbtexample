@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: mrt_shipping
+    description: customer table excluding NUNAVUT and with support value
+    columns:
+      - name: ord_id
+        description: Unique identifier for the order
+        tests:
+          - unique
+          - not_null
+      - name: ship_id
+        description: Unique identifier for the ship
+        tests:
+          - unique
+          - not_null
+      - name: ship_date
+        description: the date at the shipment happened
+      - name: order_date
+        description: the date at the order was placed
+      - name: out_id
+        description: Unique identifier for the order
+        tests:
+          - unique
+          - not_null
+      - name: order_priority
+        description: priority of the order placed by the customer
+      - name: time_delayed 
+        description: time_delayed in the shipment
+      - name: support
+        description: if support is provided to high priority orders
